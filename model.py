@@ -33,4 +33,4 @@ print("Model Test Score==",clf.score(X_test,y_test));
 print("Weighted Score::")
 print(classification_report(y_test,y_pred));
 
-joblib.dump(clf,"rf_model.sav");
+joblib.dump(clf, "rf_model.sav");
