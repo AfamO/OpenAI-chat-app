@@ -6,7 +6,6 @@ import random;
 import time;
 import openai;
 from PIL import Image;
-from flask import Flask, redirect, render_template, request, url_for
 import pandas;
 from openai.error import RateLimitError, APIConnectionError,AuthenticationError
 
