@@ -30,10 +30,11 @@ assitant_responses = random.choice(
 
 #OpenAI API key
 openai.api_key = st.secrets["OPENAI_API_KEY"];
+print("My API Key==",st.secrets["OPENAI_API_KEY"]);
 
 image = Image.open('stackoverflow.jpg');
 st.image(image, caption='Image Credit:stackoverflow.com', width=500)
-st.title("Bolt for Programmers!");
+st.title("Chat Bot for Programmers!");
 st.markdown("Ask Programming Related Questions and Other Non Programming Questions ");
 st.divider();
 
