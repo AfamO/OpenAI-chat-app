@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/mscds1_dat620.iml" filepath="$PROJECT_DIR$/.idea/mscds1_dat620.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/openai-quickstart-python.iml" filepath="$PROJECT_DIR$/.idea/openai-quickstart-python.iml" />
     </modules>
   </component>
 </project>

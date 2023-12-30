@@ -1,2 +1,2 @@
-# iris-type-classifier_with_streamlit
-Use StreamLit to deploy and classify Iris Flower type
+# OpenAI-chat-app
+An Open-AI powered simple chat app that answers programming question and other related questions. It is meant to mimic stack overflow for programmers
