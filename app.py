@@ -28,8 +28,9 @@ assitant_responses = random.choice(
     );
 
 #OpenAI API key
+print("my API Key==",st.secrets["OPENAI_API_KEY"]);
 openai.api_key = st.secrets["OPENAI_API_KEY"];
-print("My API Key==",st.secrets["OPENAI_API_KEY"]);
+print("my flask env==",st.secrets['FLASK_ENV'])
 
 image = Image.open('stackoverflow.jpg');
 st.image(image, caption='Image Credit:stackoverflow.com', width=500)
