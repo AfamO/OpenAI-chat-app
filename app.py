@@ -8,7 +8,7 @@ import openai;
 from PIL import Image;
 from flask import Flask, redirect, render_template, request, url_for
 import pandas;
-from openai.error import RateLimitError, APIConnectionError
+from openai.error import RateLimitError, APIConnectionError,AuthenticationError
 
 if __name__ == '__main__':
     # Function to be called before exiting
@@ -56,6 +56,12 @@ def generate_response(is_chatgpt=True):
             message_placeholder.markdown(full_response);
     except APIConnectionError:
         logging.info("APIConnection/Internet Error! Navigating to offline/manual bolt responses")
+        for chunk in assitant_responses.split():
+            full_response += chunk + " ";
+            time.sleep(0.05)
+            message_placeholder.markdown(full_response);
+    except AuthenticationError:
+        logging.info("Authentication(API Key) Error! Navigating to offline/manual bolt responses")
         for chunk in assitant_responses.split():
             full_response += chunk + " ";
             time.sleep(0.05)
